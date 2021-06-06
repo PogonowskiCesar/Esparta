@@ -1,6 +1,6 @@
-package es.mde.usuario;
+package es.mde;
 
-import es.mde.usuario.UsuarioImpl.TipoUsuario;
+import es.mde.UsuarioImpl.TipoUsuario;
 
 public interface Usuario {
 	String getNombre();

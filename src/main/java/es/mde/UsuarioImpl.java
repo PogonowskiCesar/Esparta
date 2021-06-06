@@ -1,4 +1,4 @@
-package es.mde.usuario;
+package es.mde;
 
 public abstract class UsuarioImpl implements Usuario {
 	private String nombre;

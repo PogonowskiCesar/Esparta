@@ -1,4 +1,4 @@
-package es.mde.usuario;
+package es.mde;
 
 public class Entrenamiento {
 
@@ -6,7 +6,7 @@ public class Entrenamiento {
 	private String descripcion;
 
 	public enum Intensidad {
-		FACIL, MEDIA, DURA
+		SUAVE, MEDIA, FUERTE
 	};
 
 	private Intensidad intensidad;
