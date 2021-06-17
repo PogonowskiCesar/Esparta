@@ -1,13 +1,20 @@
 package es.mde;
 
-public abstract class UsuarioImpl implements Usuario {
+public class UsuarioImpl implements Usuario {
 	private String nombre;
 	private String apellidos;
 	private String email;
 	private String telefono;
 
-	public enum TipoUsuario {
-		ADMIN, ENTRENADOR, CLIENTE
+	public static enum TipoUsuario {
+		ADMIN, ENTRENADOR, CLIENTE;
+
+		@Override
+		public String toString() {
+
+			return name();
+		}
+
 	};
 
 	private TipoUsuario tipoUsuario;
@@ -61,13 +68,8 @@ public abstract class UsuarioImpl implements Usuario {
 
 	}
 
-	public UsuarioImpl(TipoUsuario tipo) {
+	public UsuarioImpl(String nombre, String apellidos, String email, String telefono) {
 
-		this.tipoUsuario = tipo;
-	}
-
-	public UsuarioImpl(String nombre, String apellidos, String email, String telefono, TipoUsuario tipo) {
-		this(tipo);
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.email = email;
