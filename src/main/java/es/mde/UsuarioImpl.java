@@ -6,18 +6,18 @@ public class UsuarioImpl implements Usuario {
 	private String email;
 	private String telefono;
 
-	public static enum TipoUsuario {
-		ADMIN, ENTRENADOR, CLIENTE;
+//	public static enum TipoUsuario {
+//		ADMIN, ENTRENADOR, CLIENTE;
 
-		@Override
-		public String toString() {
+//		@Override
+//		public String toString() {
+//
+//			return name();
+//		}
+//
+//	};
 
-			return name();
-		}
-
-	};
-
-	private TipoUsuario tipoUsuario;
+//	private TipoUsuario tipoUsuario;
 
 	@Override
 	public String getNombre() {
@@ -55,14 +55,14 @@ public class UsuarioImpl implements Usuario {
 		this.telefono = telefono;
 	}
 
-	@Override
-	public TipoUsuario getTipoUsuario() {
-		return tipoUsuario;
-	}
-
-	public void setTipoUsuario(TipoUsuario tipoUsuario) {
-		this.tipoUsuario = tipoUsuario;
-	}
+//	@Override
+//	public TipoUsuario getTipoUsuario() {
+//		return tipoUsuario;
+//	}
+//
+//	public void setTipoUsuario(TipoUsuario tipoUsuario) {
+//		this.tipoUsuario = tipoUsuario;
+//	}
 
 	public UsuarioImpl() {
 
